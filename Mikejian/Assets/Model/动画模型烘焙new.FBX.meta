@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: 183a7bd529467f140bb5b2b4a9d18f24
+timeCreated: 1508334700
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: "\u4E09\u7EF4\u89C6\u56FE: {\u4E09\u7EF4}"
+    100002: //RootNode
+    100004: "\u57FA\u672C\u5899 \u526A\u529B\u5899 - 800mm \u6DF7\u51DD\u571F [3277836]"
+    100006: "\u5E26\u914D\u4EF6\u7684\u7535\u7F06\u6865\u67B6 \u5F3A\u7535\u6865\u67B6
+      [3158677]"
+    100008: "\u652F\u67B63 \u652F\u67B64 [3298392]"
+    100010: "\u652F\u67B64 200# [3303214]"
+    100012: "\u652F\u67B67 \u652F\u67B67 [3324303]"
+    100014: "\u77E9\u5F62\u98CE\u7BA1 \u6696\u901A-\u9001\u98CE [3164528]"
+    100016: "\u77E9\u5F62\u98CE\u7BA1 \u6696\u901A-\u9001\u98CE [3192657]"
+    100018: "\u7BA1\u9053\u7C7B\u578B \u5185\u5916\u58C1\u70ED\u6D78\u950C\u94A2\u7BA1
+      [3172289]"
+    100020: "\u7BA1\u9053\u7C7B\u578B \u538B\u529B\u96E8\u6C34-\u5185\u5916\u58C1\u70ED\u6D78\u950C\u94A2\u7BA1
+      [3238124]"
+    100022: "\u7BA1\u9053\u7C7B\u578B \u55B7\u6DCB-EP\u5185\u5916\u6D82\u5851\u7BA1
+      [2485040]"
+    100024: "\u7BA1\u9053\u7C7B\u578B \u55B7\u6DCB-EP\u5185\u5916\u6D82\u5851\u7BA1
+      [3237857]"
+    100026: "\u7BA1\u9053\u7C7B\u578B \u55B7\u6DCB-EP\u5185\u5916\u6D82\u5851\u7BA1
+      [3271032]"
+    100028: "\u7BA1\u9053\u7C7B\u578B \u6696\u901A-\u51B7\u51BB\u4F9B\u6C34(\u6D82\u5851\u94A2\u7BA1)
+      [3108298]"
+    100030: "\u7BA1\u9053\u7C7B\u578B \u6696\u901A-\u51B7\u51BB\u56DE\u6C34(\u6D82\u5851\u94A2\u7BA1)
+      [3108501]"
+    100032: "\u7BA1\u9053\u7C7B\u578B \u673A\u623F\u51B7\u5374\u4F9B\u6C34 [3137018]"
+    100034: "\u7BA1\u9053\u7C7B\u578B \u673A\u623F\u51B7\u5374\u4F9B\u6C34 [3137066]"
+    100036: "\u7BA1\u9053\u7C7B\u578B \u6D88\u9632-EP\u5185\u5916\u6D82\u5851\u7BA1
+      [3145065]"
+    100038: "\u7BA1\u9053\u7C7B\u578B \u6D88\u9632-EP\u5185\u5916\u6D82\u5851\u7BA1
+      [3175277]"
+    100040: "\u7BA1\u9053\u7C7B\u578B \u7ED9\u6C34-\u8584\u58C1\u4E0D\u9508\u94A2\u7BA1
+      [3146787]"
+    100042: "\u7BA1\u9053\u7C7B\u578B \u7ED9\u6C34-\u8584\u58C1\u4E0D\u9508\u94A2\u7BA1
+      [3177040]"
+    400000: "\u4E09\u7EF4\u89C6\u56FE: {\u4E09\u7EF4}"
+    400002: //RootNode
+    400004: "\u57FA\u672C\u5899 \u526A\u529B\u5899 - 800mm \u6DF7\u51DD\u571F [3277836]"
+    400006: "\u5E26\u914D\u4EF6\u7684\u7535\u7F06\u6865\u67B6 \u5F3A\u7535\u6865\u67B6
+      [3158677]"
+    400008: "\u652F\u67B63 \u652F\u67B64 [3298392]"
+    400010: "\u652F\u67B64 200# [3303214]"
+    400012: "\u652F\u67B67 \u652F\u67B67 [3324303]"
+    400014: "\u77E9\u5F62\u98CE\u7BA1 \u6696\u901A-\u9001\u98CE [3164528]"
+    400016: "\u77E9\u5F62\u98CE\u7BA1 \u6696\u901A-\u9001\u98CE [3192657]"
+    400018: "\u7BA1\u9053\u7C7B\u578B \u5185\u5916\u58C1\u70ED\u6D78\u950C\u94A2\u7BA1
+      [3172289]"
+    400020: "\u7BA1\u9053\u7C7B\u578B \u538B\u529B\u96E8\u6C34-\u5185\u5916\u58C1\u70ED\u6D78\u950C\u94A2\u7BA1
+      [3238124]"
+    400022: "\u7BA1\u9053\u7C7B\u578B \u55B7\u6DCB-EP\u5185\u5916\u6D82\u5851\u7BA1
+      [2485040]"
+    400024: "\u7BA1\u9053\u7C7B\u578B \u55B7\u6DCB-EP\u5185\u5916\u6D82\u5851\u7BA1
+      [3237857]"
+    400026: "\u7BA1\u9053\u7C7B\u578B \u55B7\u6DCB-EP\u5185\u5916\u6D82\u5851\u7BA1
+      [3271032]"
+    400028: "\u7BA1\u9053\u7C7B\u578B \u6696\u901A-\u51B7\u51BB\u4F9B\u6C34(\u6D82\u5851\u94A2\u7BA1)
+      [3108298]"
+    400030: "\u7BA1\u9053\u7C7B\u578B \u6696\u901A-\u51B7\u51BB\u56DE\u6C34(\u6D82\u5851\u94A2\u7BA1)
+      [3108501]"
+    400032: "\u7BA1\u9053\u7C7B\u578B \u673A\u623F\u51B7\u5374\u4F9B\u6C34 [3137018]"
+    400034: "\u7BA1\u9053\u7C7B\u578B \u673A\u623F\u51B7\u5374\u4F9B\u6C34 [3137066]"
+    400036: "\u7BA1\u9053\u7C7B\u578B \u6D88\u9632-EP\u5185\u5916\u6D82\u5851\u7BA1
+      [3145065]"
+    400038: "\u7BA1\u9053\u7C7B\u578B \u6D88\u9632-EP\u5185\u5916\u6D82\u5851\u7BA1
+      [3175277]"
+    400040: "\u7BA1\u9053\u7C7B\u578B \u7ED9\u6C34-\u8584\u58C1\u4E0D\u9508\u94A2\u7BA1
+      [3146787]"
+    400042: "\u7BA1\u9053\u7C7B\u578B \u7ED9\u6C34-\u8584\u58C1\u4E0D\u9508\u94A2\u7BA1
+      [3177040]"
+    2000000: "\u4E09\u7EF4\u89C6\u56FE: {\u4E09\u7EF4}"
+    2300000: "\u57FA\u672C\u5899 \u526A\u529B\u5899 - 800mm \u6DF7\u51DD\u571F [3277836]"
+    2300002: "\u5E26\u914D\u4EF6\u7684\u7535\u7F06\u6865\u67B6 \u5F3A\u7535\u6865\u67B6
+      [3158677]"
+    2300004: "\u652F\u67B63 \u652F\u67B64 [3298392]"
+    2300006: "\u652F\u67B64 200# [3303214]"
+    2300008: "\u652F\u67B67 \u652F\u67B67 [3324303]"
+    2300010: "\u77E9\u5F62\u98CE\u7BA1 \u6696\u901A-\u9001\u98CE [3164528]"
+    2300012: "\u77E9\u5F62\u98CE\u7BA1 \u6696\u901A-\u9001\u98CE [3192657]"
+    2300014: "\u7BA1\u9053\u7C7B\u578B \u5185\u5916\u58C1\u70ED\u6D78\u950C\u94A2\u7BA1
+      [3172289]"
+    2300016: "\u7BA1\u9053\u7C7B\u578B \u538B\u529B\u96E8\u6C34-\u5185\u5916\u58C1\u70ED\u6D78\u950C\u94A2\u7BA1
+      [3238124]"
+    2300018: "\u7BA1\u9053\u7C7B\u578B \u55B7\u6DCB-EP\u5185\u5916\u6D82\u5851\u7BA1
+      [2485040]"
+    2300020: "\u7BA1\u9053\u7C7B\u578B \u55B7\u6DCB-EP\u5185\u5916\u6D82\u5851\u7BA1
+      [3237857]"
+    2300022: "\u7BA1\u9053\u7C7B\u578B \u55B7\u6DCB-EP\u5185\u5916\u6D82\u5851\u7BA1
+      [3271032]"
+    2300024: "\u7BA1\u9053\u7C7B\u578B \u6696\u901A-\u51B7\u51BB\u4F9B\u6C34(\u6D82\u5851\u94A2\u7BA1)
+      [3108298]"
+    2300026: "\u7BA1\u9053\u7C7B\u578B \u6696\u901A-\u51B7\u51BB\u56DE\u6C34(\u6D82\u5851\u94A2\u7BA1)
+      [3108501]"
+    2300028: "\u7BA1\u9053\u7C7B\u578B \u673A\u623F\u51B7\u5374\u4F9B\u6C34 [3137018]"
+    2300030: "\u7BA1\u9053\u7C7B\u578B \u673A\u623F\u51B7\u5374\u4F9B\u6C34 [3137066]"
+    2300032: "\u7BA1\u9053\u7C7B\u578B \u6D88\u9632-EP\u5185\u5916\u6D82\u5851\u7BA1
+      [3145065]"
+    2300034: "\u7BA1\u9053\u7C7B\u578B \u6D88\u9632-EP\u5185\u5916\u6D82\u5851\u7BA1
+      [3175277]"
+    2300036: "\u7BA1\u9053\u7C7B\u578B \u7ED9\u6C34-\u8584\u58C1\u4E0D\u9508\u94A2\u7BA1
+      [3146787]"
+    2300038: "\u7BA1\u9053\u7C7B\u578B \u7ED9\u6C34-\u8584\u58C1\u4E0D\u9508\u94A2\u7BA1
+      [3177040]"
+    3300000: "\u57FA\u672C\u5899 \u526A\u529B\u5899 - 800mm \u6DF7\u51DD\u571F [3277836]"
+    3300002: "\u5E26\u914D\u4EF6\u7684\u7535\u7F06\u6865\u67B6 \u5F3A\u7535\u6865\u67B6
+      [3158677]"
+    3300004: "\u652F\u67B63 \u652F\u67B64 [3298392]"
+    3300006: "\u652F\u67B64 200# [3303214]"
+    3300008: "\u652F\u67B67 \u652F\u67B67 [3324303]"
+    3300010: "\u77E9\u5F62\u98CE\u7BA1 \u6696\u901A-\u9001\u98CE [3164528]"
+    3300012: "\u77E9\u5F62\u98CE\u7BA1 \u6696\u901A-\u9001\u98CE [3192657]"
+    3300014: "\u7BA1\u9053\u7C7B\u578B \u5185\u5916\u58C1\u70ED\u6D78\u950C\u94A2\u7BA1
+      [3172289]"
+    3300016: "\u7BA1\u9053\u7C7B\u578B \u538B\u529B\u96E8\u6C34-\u5185\u5916\u58C1\u70ED\u6D78\u950C\u94A2\u7BA1
+      [3238124]"
+    3300018: "\u7BA1\u9053\u7C7B\u578B \u55B7\u6DCB-EP\u5185\u5916\u6D82\u5851\u7BA1
+      [2485040]"
+    3300020: "\u7BA1\u9053\u7C7B\u578B \u55B7\u6DCB-EP\u5185\u5916\u6D82\u5851\u7BA1
+      [3237857]"
+    3300022: "\u7BA1\u9053\u7C7B\u578B \u55B7\u6DCB-EP\u5185\u5916\u6D82\u5851\u7BA1
+      [3271032]"
+    3300024: "\u7BA1\u9053\u7C7B\u578B \u6696\u901A-\u51B7\u51BB\u4F9B\u6C34(\u6D82\u5851\u94A2\u7BA1)
+      [3108298]"
+    3300026: "\u7BA1\u9053\u7C7B\u578B \u6696\u901A-\u51B7\u51BB\u56DE\u6C34(\u6D82\u5851\u94A2\u7BA1)
+      [3108501]"
+    3300028: "\u7BA1\u9053\u7C7B\u578B \u673A\u623F\u51B7\u5374\u4F9B\u6C34 [3137018]"
+    3300030: "\u7BA1\u9053\u7C7B\u578B \u673A\u623F\u51B7\u5374\u4F9B\u6C34 [3137066]"
+    3300032: "\u7BA1\u9053\u7C7B\u578B \u6D88\u9632-EP\u5185\u5916\u6D82\u5851\u7BA1
+      [3145065]"
+    3300034: "\u7BA1\u9053\u7C7B\u578B \u6D88\u9632-EP\u5185\u5916\u6D82\u5851\u7BA1
+      [3175277]"
+    3300036: "\u7BA1\u9053\u7C7B\u578B \u7ED9\u6C34-\u8584\u58C1\u4E0D\u9508\u94A2\u7BA1
+      [3146787]"
+    3300038: "\u7BA1\u9053\u7C7B\u578B \u7ED9\u6C34-\u8584\u58C1\u4E0D\u9508\u94A2\u7BA1
+      [3177040]"
+    4300000: "\u7BA1\u9053\u7C7B\u578B \u55B7\u6DCB-EP\u5185\u5916\u6D82\u5851\u7BA1
+      [2485040]"
+    4300002: "\u7BA1\u9053\u7C7B\u578B \u6696\u901A-\u51B7\u51BB\u4F9B\u6C34(\u6D82\u5851\u94A2\u7BA1)
+      [3108298]"
+    4300004: "\u7BA1\u9053\u7C7B\u578B \u6696\u901A-\u51B7\u51BB\u56DE\u6C34(\u6D82\u5851\u94A2\u7BA1)
+      [3108501]"
+    4300006: "\u7BA1\u9053\u7C7B\u578B \u673A\u623F\u51B7\u5374\u4F9B\u6C34 [3137018]"
+    4300008: "\u7BA1\u9053\u7C7B\u578B \u673A\u623F\u51B7\u5374\u4F9B\u6C34 [3137066]"
+    4300010: "\u7BA1\u9053\u7C7B\u578B \u6D88\u9632-EP\u5185\u5916\u6D82\u5851\u7BA1
+      [3145065]"
+    4300012: "\u7BA1\u9053\u7C7B\u578B \u7ED9\u6C34-\u8584\u58C1\u4E0D\u9508\u94A2\u7BA1
+      [3146787]"
+    4300014: "\u5E26\u914D\u4EF6\u7684\u7535\u7F06\u6865\u67B6 \u5F3A\u7535\u6865\u67B6
+      [3158677]"
+    4300016: "\u77E9\u5F62\u98CE\u7BA1 \u6696\u901A-\u9001\u98CE [3164528]"
+    4300018: "\u7BA1\u9053\u7C7B\u578B \u5185\u5916\u58C1\u70ED\u6D78\u950C\u94A2\u7BA1
+      [3172289]"
+    4300020: "\u7BA1\u9053\u7C7B\u578B \u6D88\u9632-EP\u5185\u5916\u6D82\u5851\u7BA1
+      [3175277]"
+    4300022: "\u7BA1\u9053\u7C7B\u578B \u7ED9\u6C34-\u8584\u58C1\u4E0D\u9508\u94A2\u7BA1
+      [3177040]"
+    4300024: "\u77E9\u5F62\u98CE\u7BA1 \u6696\u901A-\u9001\u98CE [3192657]"
+    4300026: "\u7BA1\u9053\u7C7B\u578B \u55B7\u6DCB-EP\u5185\u5916\u6D82\u5851\u7BA1
+      [3237857]"
+    4300028: "\u7BA1\u9053\u7C7B\u578B \u538B\u529B\u96E8\u6C34-\u5185\u5916\u58C1\u70ED\u6D78\u950C\u94A2\u7BA1
+      [3238124]"
+    4300030: "\u7BA1\u9053\u7C7B\u578B \u55B7\u6DCB-EP\u5185\u5916\u6D82\u5851\u7BA1
+      [3271032]"
+    4300032: "\u57FA\u672C\u5899 \u526A\u529B\u5899 - 800mm \u6DF7\u51DD\u571F [3277836]"
+    4300034: "\u652F\u67B63 \u652F\u67B64 [3298392]"
+    4300036: "\u652F\u67B64 200# [3303214]"
+    4300038: "\u652F\u67B67 \u652F\u67B67 [3324303]"
+    7400000: "HDPE\u91CD\u529B\u6392\u6C34\u7BA1"
+    7400002: "\u6210\u6392\u6C34\u7BA1"
+    7400004: "\u6210\u6392\u6865\u67B6"
+    7400006: "\u98CE\u7BA1"
+    7400008: "\u5C0F\u53E3\u5F84\u652F\u7BA1"
+    9500000: //RootNode
+    11100000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 01 - Default
+    second: {fileID: 2100000, guid: a4d5f2fc42bbd1c42a82c440b681597c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 02 - Default
+    second: {fileID: 2100000, guid: 3118687fe2e989f4fb671c32a0a6c05f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u578B\u94A2"
+    second: {fileID: 2100000, guid: fa5eb91beb9885a46a515a97b805ece9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u578B\u94A22"
+    second: {fileID: 2100000, guid: 1fc1dfda38aaee644bb0c75eb1fa6eb4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u578B\u94A23"
+    second: {fileID: 2100000, guid: 2216d05825e69b04785510206b347e0e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u5E38\u89C4"
+    second: {fileID: 2100000, guid: c2dc3d20b0405e644ad2fac57cf2c884, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6DF7\u51DD\u571F\uFF0C\u73B0\u573A\u6D47\u6CE8\u7070\u8272"
+    second: {fileID: 2100000, guid: 8bd129829ef0ec440ab14ce3a16dfbab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u77F3\u818F\u5899\u677F"
+    second: {fileID: 2100000, guid: 578c3283b5b9f8543940ac57b78ede63, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u7BA1\u69FD"
+    second: {fileID: 2100000, guid: 7aca794b2693fde4bbfd6259f80d203c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u7BA1\u9053-\u55B7\u6DCB"
+    second: {fileID: 2100000, guid: b3b6b93a5c260b64d858187362ba1746, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u7BA1\u9053-\u55B7\u6DCB1"
+    second: {fileID: 2100000, guid: 104c1a2c31d55fd4285d42bf64b68fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u7BA1\u9053-\u56DE\u6C34"
+    second: {fileID: 2100000, guid: 214f7d9a1b8c1034cad59b0baab96aa8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u7BA1\u9053-\u6D88\u96321"
+    second: {fileID: 2100000, guid: ca264f4f799d80c438de75e8df40a88e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u7BA1\u9053-\u6D88\u96322"
+    second: {fileID: 2100000, guid: 98009721647e24441b32834820f47139, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u7BA1\u9053-\u7ED9\u6C341"
+    second: {fileID: 2100000, guid: fb8b07b56414eb24695b01067176c1e9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u7BA1\u9053-\u7ED9\u6C342"
+    second: {fileID: 2100000, guid: 383f37eafc57f1240bc5c2efb1e4c886, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u7BA1\u9053-\u9001\u98CE1"
+    second: {fileID: 2100000, guid: f3d3863cebb1d9742b8798fa9b701047, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u7BA1\u9053-\u9001\u98CE2"
+    second: {fileID: 2100000, guid: bfc95e617ae0c824f819d3e3c82b4cd6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u7BA1\u9053-\u96E8\u6C34"
+    second: {fileID: 2100000, guid: 0fc76449a5af9714787204b588d2ffce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u94A2\u7BA1"
+    second: {fileID: 2100000, guid: e4b9617c33143cd408dcbd82c5db4c22, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u9ED8\u8BA4\u697C\u677F"
+    second: {fileID: 2100000, guid: 1cf0da4f4493b134eaa64da41e62baec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\uFF08\u56FD\u534E\uFF09\u6DF7\u51DD\u571F\uFF0C\u73B0\u573A\u6D47\u6CE8C40"
+    second: {fileID: 2100000, guid: 08a563f16375022408b71a8b07df038d, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: "HDPE\u91CD\u529B\u6392\u6C34\u7BA1"
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 370
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: "\u6210\u6392\u6C34\u7BA1"
+      takeName: Take 001
+      firstFrame: 371
+      lastFrame: 1100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: "\u6210\u6392\u6865\u67B6"
+      takeName: Take 001
+      firstFrame: 1101
+      lastFrame: 1200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: "\u98CE\u7BA1"
+      takeName: Take 001
+      firstFrame: 1201
+      lastFrame: 1385
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: "\u5C0F\u53E3\u5F84\u652F\u7BA1"
+      takeName: Take 001
+      firstFrame: 1386
+      lastFrame: 1575
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

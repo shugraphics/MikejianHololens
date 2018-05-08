@@ -1,0 +1,9 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <UnityWSASolutionName>Mikejian</UnityWSASolutionName>
+        <UnityWSASolutionDir>E:\unityproject\Mikejian\App\</UnityWSASolutionDir>
+        <UnityProjectDir>E:\unityproject\Mikejian\</UnityProjectDir>
+        <UnityWSAPlayerDir>E:\各类软件安装文件\unity安装文件\Editor\Data\PlaybackEngines\MetroSupport\</UnityWSAPlayerDir>
+        <UnityWSAToolsDir>$(UnityWSASolutionDir)Unity\Tools\</UnityWSAToolsDir>
+    </PropertyGroup>
+</Project>
