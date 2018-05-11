@@ -1,2 +1,0 @@
-E:\unityproject\Mikejian\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86
-E:\unityproject\Mikejian\App\Mikejian\Mikejian.csproj;x86

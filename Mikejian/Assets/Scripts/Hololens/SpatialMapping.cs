@@ -3,7 +3,6 @@
 
 public class SpatialMapping : MonoBehaviour
 {
-
     public static SpatialMapping Instance { private set; get; }
 
     [HideInInspector]

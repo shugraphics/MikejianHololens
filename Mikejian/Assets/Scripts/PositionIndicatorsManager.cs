@@ -8,6 +8,14 @@ public class PositionIndicatorsManager : Singleton<PositionIndicatorsManager>
     public Transform OriginModel;//测试5
     public GameObject ModelMesh;//Groop001
 
+    // by_xqzhu
+    static public bool bManualMatch = false;
+    private bool bManualMove = false;
+    private float distance;
+    private Vector3    oldTransformPos;
+    private Vector3    oldTransformScale;
+    private Quaternion oldTransformRot;
+
     private Vector3[] oldMarkers = new Vector3[4];
     private Vector3[] hit3DPos = new Vector3[4];
 
@@ -30,6 +38,11 @@ public class PositionIndicatorsManager : Singleton<PositionIndicatorsManager>
    
     void UpdateOldPos()//获取到游戏场景中所有小方块的位置信息（有三处调用）
     {
+        // by_xqzhu
+        oldTransformPos = OriginModel.position;
+        oldTransformRot = OriginModel.rotation;
+        oldTransformScale = OriginModel.localScale;
+
         for (int index = 0; index != MarkObjsRoot.childCount; ++index)
         {
             oldMarkers[index] = MarkObjsRoot.GetChild(index).position;
@@ -37,6 +50,11 @@ public class PositionIndicatorsManager : Singleton<PositionIndicatorsManager>
     }
     void RestoreToOldPos()
     {
+        // by_xqzhu
+        OriginModel.position = oldTransformPos;
+        OriginModel.rotation = oldTransformRot;
+        OriginModel.localScale = oldTransformScale;
+
         for (int index = 0; index != MarkObjsRoot.childCount; ++index)
         {
             MarkObjsRoot.GetChild(index).position = oldMarkers[index];
@@ -44,7 +62,9 @@ public class PositionIndicatorsManager : Singleton<PositionIndicatorsManager>
     }
     private void Start()
     {
-        //ModelMesh.SetActive(false);
+        // by_xqzhu
+        ModelMesh.SetActive(false);
+
         QRCodeDetector.Instance.OnDetectedQRCode += EnableMapping;//扫完二维码，调用EnableMapping（参数是OnDetectedQRCode）函数
         InitMatrix(out originMatrix);
 
@@ -79,6 +99,44 @@ public class PositionIndicatorsManager : Singleton<PositionIndicatorsManager>
         return (signed_angle <= 0) ? 360 + signed_angle : signed_angle;
     }
 
+    // by_xqzhu
+    private void Match()
+    {
+        RestoreToOldPos();
+
+        Vector3[] Markers = new Vector3[4];
+        for (int i = 0; i < Markers.Length; i++)
+        {
+            Markers[i] = MarkObjsRoot.GetChild(i).position;
+        }
+
+        //计算缩放量
+        float originDistance = Vector3.Distance(Markers[1], Markers[0]);
+        float targetDistance = Vector3.Distance(hit3DPos[1], hit3DPos[0]);
+        float ScaleTimes = targetDistance / originDistance;
+        OriginModel.localScale = Vector3.Scale(OriginModel.localScale, new Vector3(ScaleTimes, ScaleTimes, ScaleTimes));
+        for (int i = 0; i < Markers.Length; i++)
+        {
+            Markers[i] = MarkObjsRoot.GetChild(i).position;
+        }
+
+        //计算平移量
+        Vector3 offset = hit3DPos[0] - Markers[0];
+        OriginModel.transform.Translate(offset);
+        for (int i = 0; i < Markers.Length; i++)
+        {
+            Markers[i] = MarkObjsRoot.GetChild(i).position;
+        }
+
+        //计算旋转量
+        Vector3 rotOrigin = Markers[0];
+        Vector3 rotVecOld3D = Markers[1] - Markers[0];
+        Vector3 rotVecNew3D = hit3DPos[1] - hit3DPos[0];
+        float angle = SignedAngleBetween(rotVecOld3D, rotVecNew3D);
+        OriginModel.transform.RotateAround(rotOrigin, Vector3.up, angle);//以小方块0作为旋转点，绕y轴旋转角度（angle）  
+    }
+
+    // by_xqzhu
     private void SetMarkObjPosition()//计算小方块新的位置
     {
         RaycastHit hitInfo;
@@ -96,31 +154,14 @@ public class PositionIndicatorsManager : Singleton<PositionIndicatorsManager>
                 transMatrix = targetMatrix * originMatrix.inverse;*/
                 /*SetModalTransform();*/
 
-                RestoreToOldPos();
-                //计算缩放量
-                //UpdateOldPos();
-                float originDistance = Vector3.Distance(oldMarkers[1], oldMarkers[0]);
-                float targetDistance = Vector3.Distance(hit3DPos[1], hit3DPos[0]);
-                float ScaleTimes = targetDistance / originDistance;
-                OriginModel.localScale = Vector3.Scale(OriginModel.localScale, new Vector3(ScaleTimes, ScaleTimes, ScaleTimes));
-
-                //计算平移量
-                UpdateOldPos();
-                Vector3 offset = hit3DPos[0] - oldMarkers[0];
-                OriginModel.transform.Translate(offset);
-
-                //计算旋转量
-                UpdateOldPos();
-                Vector3 rotOrigin = oldMarkers[0];
-                Vector3 rotVecOld3D = oldMarkers[1] - oldMarkers[0];
-                Vector3 rotVecNew3D = hit3DPos[1] - hit3DPos[0];
-                float angle = SignedAngleBetween(rotVecOld3D, rotVecNew3D);
-                OriginModel.transform.RotateAround(rotOrigin, Vector3.up, angle);//以小方块0作为旋转点，绕y轴旋转角度（angle）
-                //OriginModel.transform.Rotate(0, 100, 0);
+                Match();
             }
         }
 
         GestureManager.Instance.OnDoubleClick -= SetMarkObjPosition;
+
+        // by_xqzhu
+        ModelMesh.SetActive(true);
     }
 
 
@@ -162,5 +203,47 @@ public class PositionIndicatorsManager : Singleton<PositionIndicatorsManager>
     private void OnDestroy()
     {
         QRCodeDetector.Instance.OnDetectedQRCode -= EnableMapping;
+    }
+
+    // by_xqzhu
+    private void Update()
+    {
+        if (bManualMatch)
+        {
+            if (bManualMove)
+            {
+                Interact.SelectedGameObject.transform.position = Camera.main.transform.position + Camera.main.transform.forward * distance;
+                currentMarkIndex = (Interact.SelectedGameObject.name == "Indicator0") ? 0 : 1;
+                hit3DPos[currentMarkIndex] = Interact.SelectedGameObject.transform.position;
+
+                Match();
+            }
+        }
+    }
+
+    // by_xqzhu
+    public void ClickIndicator()
+    {
+        if (bManualMatch)
+        {
+            if (Interact.SelectedGameObject.name == "Indicator0" || 
+                Interact.SelectedGameObject.name == "Indicator1")
+            {
+                bManualMove = true;
+
+                Vector3 vec = Interact.SelectedGameObject.transform.position - Camera.main.transform.position;
+                distance = vec.magnitude;
+            }
+            else
+            {
+                bManualMove = false;
+            }
+        }
+    }
+
+    // by_xqzhu
+    public void QuitClickIndicator()
+    {
+        bManualMatch = false;
     }
 }

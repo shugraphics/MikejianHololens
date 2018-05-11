@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class GeneralUIManager : Singleton<GeneralUIManager>
 {
+    // by_xqzhu
+    public GameObject ModelMesh;
+
     public GameObject infoBtn;
     //public GameObject Btn1;
     //public GameObject Btn2;
@@ -70,10 +73,18 @@ public class GeneralUIManager : Singleton<GeneralUIManager>
 
         transform.Find("QRCode").GetComponent<UIIcon>()._OnClick += (() => 
         {
+            // by_xqzhu
+            ModelMesh.SetActive(false);
+
             QRCodeDetector.Instance.tryOpenQRCodeDetector();//开启二维码扫描
         });
 
-       
+        // by_xqzhu
+        transform.Find("ManualMatch").GetComponent<UIIcon>()._OnClick += (() =>
+        {
+            //ModelMesh.SetActive(false);
+            PositionIndicatorsManager.bManualMatch = true;
+        });
 
         transform.Find("显示隐藏").GetComponent<UIIcon>()._OnClick += (() =>//这里显示；隐藏的是Hierarchy面板中的ObjectsInfo物体
         {

@@ -14,6 +14,10 @@ public class InteractManager : Singleton<InteractManager>
         //GestureManager.Instance.OnSingleClick += SendResetMessage;
         GestureManager.Instance.OnDoubleClick += SendSelectMessage;//??当双击时才会调用SendSelectMessage()函数，发送“onselect”信息
         GestureManager.Instance.OnSingleClick += CursorStateCtr.Instance.MoveNear;//??
+
+        // by_xqzhu
+        GestureManager.Instance.OnDoubleClick += PositionIndicatorsManager.Instance.ClickIndicator;
+        //GestureManager.Instance.OnDoubleClick += PositionIndicatorsManager.Instance.QuitClickIndicator;
     }
     private void Update()
     {

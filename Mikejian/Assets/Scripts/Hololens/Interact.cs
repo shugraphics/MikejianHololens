@@ -118,7 +118,8 @@ public class Interact : MonoBehaviour
         Debug.Log("Enter Cancel Process  "+toBeCanceled.name);
         if (toBeCanceled == _selectedGameObject)
         {
-            ResetPosition();
+            if (!PositionIndicatorsManager.bManualMatch)
+                ResetPosition();
 
             _selectedGameObject = null;
             AdjustUIPanel.Instance.gameObject.SetActive(false);
