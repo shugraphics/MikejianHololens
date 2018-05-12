@@ -250,6 +250,7 @@
     <Compile Include="Assets\Scripts\Hololens\SpatialMapping.cs" />
     <Compile Include="Assets\Scripts\Hololens\SpeechManager.cs" />
     <Compile Include="Assets\Scripts\Hololens\UIIcon.cs" />
+    <Compile Include="Assets\Scripts\ManualMatchCheck.cs" />
     <Compile Include="Assets\Scripts\Multi\Billboard.cs" />
     <Compile Include="Assets\Scripts\Multi\ComRef.cs" />
     <Compile Include="Assets\Scripts\Multi\FitBox.cs" />

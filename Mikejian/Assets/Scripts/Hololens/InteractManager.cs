@@ -17,7 +17,6 @@ public class InteractManager : Singleton<InteractManager>
 
         // by_xqzhu
         GestureManager.Instance.OnDoubleClick += PositionIndicatorsManager.Instance.ClickIndicator;
-        //GestureManager.Instance.OnDoubleClick += PositionIndicatorsManager.Instance.QuitClickIndicator;
     }
     private void Update()
     {
@@ -75,5 +74,8 @@ public class InteractManager : Singleton<InteractManager>
         //GestureManager.Instance.OnSingleClick -= SendResetMessage;
         GestureManager.Instance.OnDoubleClick -= SendSelectMessage;
         GestureManager.Instance.OnSingleClick -= CursorStateCtr.Instance.MoveNear;
+
+        // by_xqzhu
+        GestureManager.Instance.OnDoubleClick -= PositionIndicatorsManager.Instance.ClickIndicator;
     }
 }

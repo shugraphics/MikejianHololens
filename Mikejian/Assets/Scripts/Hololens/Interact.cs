@@ -88,7 +88,8 @@ public class Interact : MonoBehaviour
         }
                 
         SelectedGameObject = gameObject;//SelectedGameObject每次双击选中不同模型时，变量存储新的选中模型
-        AdjustUIPanel.Instance.gameObject.SetActive(true); //??
+        if (!PositionIndicatorsManager.bManualMatch)
+            AdjustUIPanel.Instance.gameObject.SetActive(true); //??
 
         for (int index = 0; index != InteractibleObject.Length; ++index)
         {

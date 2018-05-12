@@ -9,8 +9,8 @@ public class PositionIndicatorsManager : Singleton<PositionIndicatorsManager>
     public GameObject ModelMesh;//Groop001
 
     // by_xqzhu
-    static public bool bManualMatch = false;
-    private bool bManualMove = false;
+    public static bool bManualMatch = false;
+    public static bool bManualMove = false;
     private float distance;
     private Vector3    oldTransformPos;
     private Vector3    oldTransformScale;
@@ -63,7 +63,7 @@ public class PositionIndicatorsManager : Singleton<PositionIndicatorsManager>
     private void Start()
     {
         // by_xqzhu
-        ModelMesh.SetActive(false);
+        ModelMesh.SetActive(true);
 
         QRCodeDetector.Instance.OnDetectedQRCode += EnableMapping;//扫完二维码，调用EnableMapping（参数是OnDetectedQRCode）函数
         InitMatrix(out originMatrix);
@@ -208,16 +208,13 @@ public class PositionIndicatorsManager : Singleton<PositionIndicatorsManager>
     // by_xqzhu
     private void Update()
     {
-        if (bManualMatch)
+        if (bManualMatch && bManualMove)
         {
-            if (bManualMove)
-            {
-                Interact.SelectedGameObject.transform.position = Camera.main.transform.position + Camera.main.transform.forward * distance;
-                currentMarkIndex = (Interact.SelectedGameObject.name == "Indicator0") ? 0 : 1;
-                hit3DPos[currentMarkIndex] = Interact.SelectedGameObject.transform.position;
+            Interact.SelectedGameObject.transform.position = Camera.main.transform.position + Camera.main.transform.forward * distance;
+            currentMarkIndex = (Interact.SelectedGameObject.name == "Indicator0") ? 0 : 1;
+            hit3DPos[currentMarkIndex] = Interact.SelectedGameObject.transform.position;
 
-                Match();
-            }
+            Match();
         }
     }
 
@@ -226,24 +223,32 @@ public class PositionIndicatorsManager : Singleton<PositionIndicatorsManager>
     {
         if (bManualMatch)
         {
-            if (Interact.SelectedGameObject.name == "Indicator0" || 
-                Interact.SelectedGameObject.name == "Indicator1")
+            if (Interact.SelectedGameObject == null)
+            {
+                if (bManualMove)
+                {
+                    bManualMove = false;
+                    ModelMesh.SetActive(true);
+                }
+                else
+                {
+                    ModelMesh.SetActive(!GeneralUIManager.Instance.gameObject.activeSelf);
+                }
+            }
+            else if (Interact.SelectedGameObject.name == "Indicator0" ||
+                     Interact.SelectedGameObject.name == "Indicator1")
             {
                 bManualMove = true;
 
                 Vector3 vec = Interact.SelectedGameObject.transform.position - Camera.main.transform.position;
                 distance = vec.magnitude;
-            }
-            else
-            {
-                bManualMove = false;
+
+                ModelMesh.SetActive(true);
             }
         }
-    }
-
-    // by_xqzhu
-    public void QuitClickIndicator()
-    {
-        bManualMatch = false;
+        else
+        {
+            ModelMesh.SetActive(true);
+        }
     }
 }
